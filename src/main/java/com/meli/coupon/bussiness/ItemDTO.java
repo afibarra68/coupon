@@ -6,6 +6,7 @@ import javax.validation.constraints.Digits;
 import lombok.*;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 import static com.fasterxml.jackson.annotation.JsonInclude.Include.NON_NULL;
 
@@ -22,6 +23,6 @@ public class ItemDTO implements Serializable {
     private String itemId;
 
     @Digits(integer=6, fraction=2)
-    private Double price;
+    private BigDecimal price;
 
 }
